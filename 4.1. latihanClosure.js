@@ -22,6 +22,7 @@ let panggilNama = init();
 panggilNama("galih", 21);
 */
 
+/*
 function ucapkanSalam(waktu) {
     return function (nama) {
         console.log(`Halo ${nama}! Selamat ${waktu}, semoga harimu menyenangkan`);
@@ -34,3 +35,19 @@ let selamatMalam = ucapkanSalam(`Malam`);
 
 
 selamatPagi("Raihan");
+*/
+
+let add = function() {
+    let counter = 0;
+    
+    return function() {
+        return ++counter;
+    }
+}
+
+let a = add();
+
+
+console.log(a());
+console.log(a());
+console.log(a());
