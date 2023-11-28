@@ -15,12 +15,17 @@ Template Literal
 
 // Template Literals / Template String
 
-const nama = "Sandhika";
-const umur = 33;
-console.log(`Halo, nama saya ${nama}, dan saya ${umur} tahun.`);
-console.log('Halo, nama saya ' + nama + ', dan saya ' + umur + ' tahun.');
+// const nama = "Sandhika";
+// const umur = 33;
+// console.log(`Halo, nama saya ${nama}, dan saya ${umur} tahun.`);
+// console.log('Halo, nama saya ' + nama + ', dan saya ' + umur + ' tahun.');
 
-
+// Embedded Expression
+// console.log(`${1 + 1}`);
+// console.log(`${alert("Halo!")}`);
+    
+const x = 11;
+console.log(`${(x % 2 == 0) ? "Genap" : "Ganjil"}`);
 /*
 //HTML Fragments
 const mhs = {
