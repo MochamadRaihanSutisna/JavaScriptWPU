@@ -1,20 +1,15 @@
+//HighLight
+
 
 const nama = "Mochamad Raihan Sutisna";
 const umur = 21;
+const email = "mochamadraihansutisna@gmail.com"
 
 function highlight(strings, ...values) {
-
-    // let result = "";
-    // strings.forEach((str, i) => {
-    //     result += `${str}${values[i] || ""}`; 
-    // });
-    // return result;
-    
-
     return strings.reduce((result, str, i) => `${result}${str}<span class="h1">${values[i] || ''}</span>`, '');
 }
 
-const str = highlight`Halo, nama saya ${nama}, saya ${umur } tahun.`;
+const str = highlight`Halo, nama saya ${nama}, saya ${umur } tahun. dan email saya adalah : ${email}`;
 console.log(str);
 
 document.body.innerHTML = str;

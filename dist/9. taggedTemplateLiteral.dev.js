@@ -1,14 +1,42 @@
-//Tagged Templates
-// const nama = "Mochamad Raihan Sutisna";
-// const umur = 21;
-// function coba(strings, ...values) {
-//      let result = "";
-//      strings.forEach((str, i) => {
-//          result += `${str}${values[i] || ""}`; 
-//      });
-//      return result;
-//     return strings.reduce((result, str, i) => `${result}${str}${values[i] || ''}`, '');
-// }
-// const str = coba`Halo, nama saya ${nama}, saya ${umur } tahun.`;
-// console.log(str);
 "use strict";
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["Halo, nama saya ", ", saya ", " tahun."]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+//Tagged Templates
+var nama = "Mochamad Raihan Sutisna";
+var umur = 21;
+
+function coba(strings) {
+  for (var _len = arguments.length, values = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    values[_key - 1] = arguments[_key];
+  }
+
+  //  let result = "";
+  //  strings.forEach((str, i) => {
+  //      result += `${str}${values[i] || ""}`; 
+  //  });
+  //  return result;
+  return strings.reduce(function (result, str, i) {
+    return "".concat(result).concat(str).concat(values[i] || '');
+  }, '');
+}
+
+var str = coba(_templateObject(), nama, umur);
+console.log(str);
+/*
+
+Escaping HTMl Tags
+Translation & Internationalization
+Styled Components
+
+*/
