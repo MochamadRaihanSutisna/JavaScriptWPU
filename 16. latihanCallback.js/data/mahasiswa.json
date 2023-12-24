@@ -1,0 +1,26 @@
+[
+    {
+        "nama" : "Mochamad Raihan Sutisna",
+        "nrp" : "020304003",
+        "email" : "mochamadraihansutisna@gmail.com",
+        "jurusan" : "Sistem informasi",
+        "idDosenWali" : 1
+    },
+    
+    {
+        "nama" : "Dewi Salwa Waenurlillah",
+        "nrp" : "020304002",
+        "email" : "dewisalwawaenurlillah@gmail.com",
+        "jurusan" : "Pendidikan Guru Bahasa Inggris",
+        "idDosenWali" : 2
+    },
+    
+    {
+        "nama" : "Rizki Muhammad Mukti",
+        "nrp" : "020304003",
+        "email" : "rizkimuhammadmukti@gmail.com",
+        "jurusan" : "Teknik Informatika",
+        "idDosenWali" : 3
+    }
+]
+
